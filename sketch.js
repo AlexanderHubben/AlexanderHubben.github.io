@@ -70,7 +70,7 @@ function mousePressed(){
 */
 
 function draw(){
-background(38);
+background(255);
 fill(17, 77, 238);
 textSize(200);
 strokeWeight(2);
@@ -97,7 +97,7 @@ strokeWeight(1);
 fill(17, 77, 238,alpha);
 //draw the pipes
 for(var p=0;p<pipes.length;p++){
-  fill(	238, 178, 17,alpha);
+  fill(	17, 77, 238,alpha);
 rect(pipes[p].x,pipes[p].hi+pipes[p].wi, pipes[p].thick , height);
 rect(pipes[p].x,pipes[p].hi-pipes[p].wi, pipes[p].thick , -height);
 pipes[p].x-=max(sqrt(pipes.length),5);
