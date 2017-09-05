@@ -71,7 +71,7 @@ function mousePressed(){
 
 function draw(){
 background(38);
-fill(238, 178, 17);
+fill(17, 77, 238);
 textSize(200);
 strokeWeight(2);
 
@@ -94,7 +94,7 @@ if(dead){
 background(255,255,255,alpha);
 strokeWeight(1);
 
-fill(238,178,17,alpha);
+fill(17, 77, 238,alpha);
 //draw the pipes
 for(var p=0;p<pipes.length;p++){
   fill(	238, 178, 17,alpha);
