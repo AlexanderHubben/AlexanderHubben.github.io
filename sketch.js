@@ -142,15 +142,16 @@ for (i=0; i<blocks.length;i++){
 }
   }
 
-
-
 if(score > high) {
   high = score;
   document.cookie = "high="+high+";";
+
 }
 textSize(20);
 strokeWeight(2);
-text('current score: ' + score+ '     high score: ' + high,20,20)
-
+text('current score: ' + score,20,20)
+if (high > 0){
+text('high score: ' + high,200+(12*(score.toString().length)),20)
+}
 
 }

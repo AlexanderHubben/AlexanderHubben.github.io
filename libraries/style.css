@@ -1,8 +1,12 @@
+:root{
+  --main-text-color:#262626;
+  --main-accent-color:#999;
+}
 
     body {
         background-image: url('../images/tile.jpg');
         background-repeat: repeat;
-        color:#262626;
+        color:var(--main-text-color);
         margin: 0 !important;
         padding: 0 !important;
         font-family:sans-serif;
@@ -10,11 +14,11 @@
     }
     header {
         color:#ffffff;
-        background-color:#262626;
+        background-color:var(--main-text-color);
     }
     a {
         text-decoration:none;
-        color:#262626;
+        color:var(--main-text-color);
     }
     a:link {
         text-decoration: none;
@@ -23,10 +27,14 @@
         text-decoration: none;
     }
     nav {
-        background-color:#114dee;
+        position:sticky;
+        background-color:var(--main-accent-color);
         height:34px;
+        top:0px;
+        z-index:100;
         line-height:34px;
     }
+
     span.nav {
         padding:9px;
         font-weight:lighter;
@@ -36,10 +44,14 @@
       font-weight:bold;
     }
     span.nav:hover {
-        background-color:#262626;
+        border-radius: 5px;
+        border-style:none;
+        background-color:var(--main-text-color);
+        border-color:var(--main-text-color);
         padding:18px 8px 10px;
         color:#ffffff;
         font-weight:bold;
+
     }
     span.nav:hover > a {
         color:#ffffff;
@@ -54,7 +66,7 @@
     article.body {
         margin:0px calc(20% - 95px);
         background-color:#ffffff;
-        color:#262626;
+        color:var(--main-text-color);
         padding:25px;
         font-size:18px;
 
@@ -65,9 +77,12 @@
     }
     article.header {
         font-size:26px;
-        background-color:#114dee;
+        background-color:var(--main-accent-color);
         padding:5px 0px 5px 40px;
         margin-top: -4px;
+        /*position:sticky;
+        top:34px;*/
+
     }
     ol {
         font-size:20px;
@@ -81,7 +96,7 @@
         font-weight:100;
     }
     hr {
-        border:2px solid #114dee;
+        border:2px solid var(--main-accent-color);
         border-style: hidden hidden solid hidden;
     }
     p.head {
@@ -108,17 +123,17 @@ color:#ffffff;
     button {
         border-radius: 3px;
         border: none;
-        color: #262626;
+        color: var(--main-text-color);
         text-align: center;
         font-size: 16px;
         padding: 10px 20px;
         transition: all 0.5s;
-        background-color:#114dee;
+        background-color:var(--main-accent-color);
         margin:10px -50px 10px 10px;
         font-weight:700;
     }
     button:hover {
-        background-color:#262626;
+        background-color:var(--main-text-color);
         color:#ffffff;
         font-weight:bold;
     }
@@ -127,18 +142,24 @@ color:#ffffff;
         transition:1s;
     }
     button:hover span {
-        padding-right: 25px;
+        padding-right: 10px;
         transition:.5s;
     }
+    button:hover a{
+      color:#fff;
+    }
+    button:hover span.arrow{
+      color:#fff;
+    }
     span.arrow {
-        color:#114dee;
+        color:var(--main-accent-color);
     }
     hr.divider {
         margin-top:-20px;
         margin-bottom:20px;
     }
     footer {
-        Background-color:#114dee;
+        Background-color:var(--main-accent-color);
     }
     canvas{
 margin-bottom:-4px;
